@@ -37,7 +37,7 @@ function SignUp() {
 
     setLoading(true);
     try {
-      const response = await axios.post("http://localhost:3030/api/signup", payload);
+      const response = await axios.post("http://localhost:3030/signUp", payload);
       
       if (response.data.status === "success") {
         setMessage({ text: "Account created successfully! Redirecting...", type: "success" });
